@@ -354,7 +354,7 @@ pydantic==2.8.2
     #   prompty
 pydantic-core==2.20.1
     # via pydantic
-pygments==2.18.0
+pygments==2.19.1
     # via rich
 pyjwt[crypto]==2.10.1
     # via
