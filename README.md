@@ -17,18 +17,6 @@ urlFragment: azure-search-openai-demo
 ---
 -->
 
-# RAG chat app with Azure OpenAI and Azure AI Search (Python)
-
-This solution creates a ChatGPT-like frontend experience over your own documents using RAG (Retrieval Augmented Generation). It uses Azure OpenAI Service to access GPT models, and Azure AI Search for data indexing and retrieval.
-
-This solution's backend is written in Python. There are also [**JavaScript**](https://aka.ms/azai/js/code), [**.NET**](https://aka.ms/azai/net/code), and [**Java**](https://aka.ms/azai/java/code) samples based on this one. Learn more about [developing AI apps using Azure AI Services](https://aka.ms/azai).
-
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
-[![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/azure-search-openai-demo)
-
-## Important Security Notice
-
-This template, the application code and configuration it contains, has been built to showcase Microsoft Azure specific services and tools. We strongly advise our customers not to make this code part of their production environments without implementing or enabling additional security features. See our [productionizing guide](docs/productionizing.md) for tips, and consult the [Azure OpenAI Landing Zone reference architecture](https://techcommunity.microsoft.com/blog/azurearchitectureblog/azure-openai-landing-zone-reference-architecture/3882102) for more best practices.
 
 ## Table of Contents
 
@@ -242,50 +230,3 @@ To clean up all the resources created by this sample:
 
 The resource group and all the resources will be deleted.
 
-## Guidance
-
-You can find extensive documentation in the [docs](docs/README.md) folder:
-
-- Deploying:
-  - [Troubleshooting deployment](docs/deploy_troubleshooting.md)
-    - [Debugging the app on App Service](docs/appservice.md)
-  - [Deploying with azd: deep dive and CI/CD](docs/azd.md)
-  - [Deploying with existing Azure resources](docs/deploy_existing.md)
-  - [Deploying from a free account](docs/deploy_lowcost.md)
-  - [Enabling optional features](docs/deploy_features.md)
-    - [All features](docs/deploy_features.md)
-    - [Login and access control](docs/login_and_acl.md)
-    - [GPT-4 Turbo with Vision](docs/gpt4v.md)
-    - [Private endpoints](docs/deploy_private.md)
-  - [Sharing deployment environments](docs/sharing_environments.md)
-- [Local development](docs/localdev.md)
-- [Customizing the app](docs/customization.md)
-- [Data ingestion](docs/data_ingestion.md)
-- [Evaluation](docs/evaluation.md)
-- [Safety evaluation](docs/safety_evaluation.md)
-- [Monitoring with Application Insights](docs/monitoring.md)
-- [Productionizing](docs/productionizing.md)
-- [Alternative RAG chat samples](docs/other_samples.md)
-
-### Resources
-
-- [📖 Docs: Get started using the chat with your data sample](https://learn.microsoft.com/azure/developer/python/get-started-app-chat-template?toc=%2Fazure%2Fdeveloper%2Fai%2Ftoc.json&bc=%2Fazure%2Fdeveloper%2Fai%2Fbreadcrumb%2Ftoc.json&tabs=github-codespaces)
-- [📖 Blog: Revolutionize your Enterprise Data with ChatGPT: Next-gen Apps w/ Azure OpenAI and AI Search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w-azure-openai-and/3762087)
-- [📖 Docs: Azure AI Search](https://learn.microsoft.com/azure/search/search-what-is-azure-search)
-- [📖 Docs: Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/overview)
-- [📖 Docs: Comparing Azure OpenAI and OpenAI](https://learn.microsoft.com/azure/cognitive-services/openai/overview#comparing-azure-openai-and-openai/)
-- [📖 Blog: Access Control in Generative AI applications with Azure AI Search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure-ai-search/3956408)
-- [📺 Talk: Quickly build and deploy OpenAI apps on Azure, infused with your own data](https://www.youtube.com/watch?v=j8i-OM5kwiY)
-- [📺 Talks: AI Chat App Hack series](https://www.youtube.com/playlist?list=PL5lwDBUC0ag6_dGZst5m3G72ewfwXLcXV)
-
-### Getting help
-
-This is a sample built to demonstrate the capabilities of modern Generative AI apps and how they can be built in Azure.
-For help with deploying this sample, please post in [GitHub Issues](/issues). If you're a Microsoft employee, you can also post in [our Teams channel](https://aka.ms/azai-python-help).
-
-This repository is supported by the maintainers, _not_ by Microsoft Support,
-so please use the support mechanisms described above, and we will do our best to help you out.
-
-### Note
-
->Note: The PDF documents used in this demo contain information generated using a language model (Azure OpenAI Service). The information contained in these documents is only for demonstration purposes and does not reflect the opinions or beliefs of Microsoft. Microsoft makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the information contained in this document. All rights reserved to Microsoft.
